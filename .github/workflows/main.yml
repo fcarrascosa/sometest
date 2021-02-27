@@ -20,6 +20,7 @@ jobs:
         uses: mathieudutour/github-tag-action@v5.1
         id: semantic_version_dry
         with:
+          default_bump: false
           create_annotated_tag: true
           github_token: ${{ secrets.GITHUB_TOKEN }}
           pre_release_branches: develop
